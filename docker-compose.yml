@@ -1,0 +1,11 @@
+logio:
+  build: .
+  environment:
+    - AUTH_USER=user
+    - AUTH_PASS=pass
+    - NODE=test
+  ports:
+    - 28777:28777
+    - 28778:28778
+  volumes:
+    - /path/to/folder:/logs
